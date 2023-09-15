@@ -14,6 +14,10 @@
 		C5DAC2892AB39E4F0045DF85 /* fundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DAC2882AB39E4F0045DF85 /* fundTests.swift */; };
 		C5DAC2932AB39E4F0045DF85 /* fundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DAC2922AB39E4F0045DF85 /* fundUITests.swift */; };
 		C5DAC2952AB39E4F0045DF85 /* fundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DAC2942AB39E4F0045DF85 /* fundUITestsLaunchTests.swift */; };
+		C5DAC2A52AB4E5D60045DF85 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DAC2A42AB4E5D60045DF85 /* HomeView.swift */; };
+		C5DAC2A72AB4E6320045DF85 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DAC2A62AB4E6320045DF85 /* Data.swift */; };
+		C5DAC2A92AB4E7550045DF85 /* MutualFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DAC2A82AB4E7550045DF85 /* MutualFund.swift */; };
+		C5DAC2AB2AB4E8590045DF85 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DAC2AA2AB4E8590045DF85 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		C5DAC28E2AB39E4F0045DF85 /* fundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DAC2922AB39E4F0045DF85 /* fundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundUITests.swift; sourceTree = "<group>"; };
 		C5DAC2942AB39E4F0045DF85 /* fundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5DAC2A42AB4E5D60045DF85 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C5DAC2A62AB4E6320045DF85 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C5DAC2A82AB4E7550045DF85 /* MutualFund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutualFund.swift; sourceTree = "<group>"; };
+		C5DAC2AA2AB4E8590045DF85 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,13 @@
 		C5DAC2752AB39E4D0045DF85 /* fund */ = {
 			isa = PBXGroup;
 			children = (
-				C5DAC2762AB39E4D0045DF85 /* fundApp.swift */,
-				C5DAC2782AB39E4D0045DF85 /* ContentView.swift */,
+				C5DAC2A32AB3ADDC0045DF85 /* viewmodel */,
+				C5DAC2A22AB3ADCE0045DF85 /* model */,
+				C5DAC2A12AB3AC5E0045DF85 /* view */,
 				C5DAC27A2AB39E4F0045DF85 /* Assets.xcassets */,
 				C5DAC27C2AB39E4F0045DF85 /* fund.entitlements */,
 				C5DAC27D2AB39E4F0045DF85 /* Preview Content */,
+				C5DAC2AA2AB4E8590045DF85 /* Network.swift */,
 			);
 			path = fund;
 			sourceTree = "<group>";
@@ -127,6 +137,32 @@
 				C5DAC2942AB39E4F0045DF85 /* fundUITestsLaunchTests.swift */,
 			);
 			path = fundUITests;
+			sourceTree = "<group>";
+		};
+		C5DAC2A12AB3AC5E0045DF85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C5DAC2762AB39E4D0045DF85 /* fundApp.swift */,
+				C5DAC2782AB39E4D0045DF85 /* ContentView.swift */,
+				C5DAC2A42AB4E5D60045DF85 /* HomeView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C5DAC2A22AB3ADCE0045DF85 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C5DAC2A62AB4E6320045DF85 /* Data.swift */,
+				C5DAC2A82AB4E7550045DF85 /* MutualFund.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C5DAC2A32AB3ADDC0045DF85 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DAC2A92AB4E7550045DF85 /* MutualFund.swift in Sources */,
+				C5DAC2A52AB4E5D60045DF85 /* HomeView.swift in Sources */,
+				C5DAC2AB2AB4E8590045DF85 /* Network.swift in Sources */,
 				C5DAC2792AB39E4D0045DF85 /* ContentView.swift in Sources */,
 				C5DAC2772AB39E4D0045DF85 /* fundApp.swift in Sources */,
+				C5DAC2A72AB4E6320045DF85 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,9 +452,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fund/fund.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fund/Preview Content\"";
+				DEVELOPMENT_TEAM = 5CMYGFYWLM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -448,9 +490,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fund/fund.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fund/Preview Content\"";
+				DEVELOPMENT_TEAM = 5CMYGFYWLM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
