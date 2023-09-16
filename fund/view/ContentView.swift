@@ -22,9 +22,10 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(mutualFund.schemeName)
                                 .bold()
+                                .lineLimit(nil)
                         }
                     }
-                    .frame(width: .infinity, alignment: .center)
+                    .frame(width: 400, alignment: .leading)
                     .padding()
                     .background(Color(#colorLiteral(red: 0.6667672396, green: 0.7527905703, blue: 1, alpha: 0.2662717301)))
                     .cornerRadius(20)
